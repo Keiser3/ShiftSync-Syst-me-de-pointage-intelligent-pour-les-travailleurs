@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>User Dashboard</h2>
+<button onclick="clockIn()">Clock In</button>
+<button onclick="clockOut()">Clock Out</button>
+<button onclick="startBreak()">Start Break</button>
+<button onclick="endBreak()">End Break</button>
+<h3>Activity</h3>
+<ul id="activity-list"></ul>
+<script src="{{ url_for('static', filename='scripts.js') }}"></script>
+{% endblock %}
